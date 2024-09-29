@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Ekkasit Prapayon</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#my-skills">My Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#toeic">Toeic</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Ekkasit Prapayon</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#my-skills" onclick="toggleMenu()">My Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#toeic" onclick="toggleMenu()">Toeic</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile_pic-1.png" alt="profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Ekkasit Prapayon</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button
+            class="btn btn-color-3"
+            onclick="location.href='https://github.com/Nakekkasit'"
+          >
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon icon-git"
+            />
+            Github
+          </button>
+          <!-- <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button> -->
+        </div>
+        <div class="contact-info-container-box">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email (4).png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p>
+              <a href="mailto:nakwondersk@gmail.com">nakwondersk@gmail.com</a>
+            </p>
+          </div>
+          <!-- <div class="contact-info-container">
+            <img
+              src="./assets/phone-call.png"
+              alt="Phone icon"
+              class="icon contact-icon email-icon"
+            />
+            <p>
+              <a href="tel:0938839986">093-883-9986</a>
+            </p>
+          </div> -->
+        </div>
+        <!-- <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div> -->
+      </div>
+    </section>
+    <!-- <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+              reprehenderit et laborum, rem, dolore eum quod voluptate
+              exercitationem nobis, nihil esse debitis maxime facere minus sint
+              delectus velit in eos quo officiis explicabo deleniti dignissimos.
+              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+              reiciendis ea magnam? Nulla, impedit fuga!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section> -->
+    <section id="my-skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <!-- Frontend -->
+        <h2 class="skills-title">Frontend Skills</h2>
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming Language</h2>
+            <div class="skill-container">
+              <div class="skills-list">
+                <img
+                  src="./assets/javascript-programming-language-icon.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Javascript</h3>
+              </div>
+              <div class="skills-list">
+                <img
+                  src="./assets/typescript-programming-language-icon.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Typescript</h3>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Text Markup and Style Language</h2>
+            <div class="skill-container">
+              <div class="skills-list">
+                <img
+                  src="./assets/html-icon.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>HTML</h3>
+              </div>
+              <div class="skills-list">
+                <img
+                  src="./assets/css-icon.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>CSS</h3>
+              </div>
+              <div class="skills-list">
+                <img
+                  src="./assets/sass.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>SASS</h3>
+              </div>
+              <!-- <div class="skills-list">
+                <img
+                  src="./assets/tailwind.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Tailwind</h3>
+              </div> -->
+            </div>
+          </div>
+          <!--  -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Library</h2>
+            <div class="skill-container">
+              <div class="skills-list">
+                <img
+                  src="./assets/reactjs.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>React</h3>
+              </div>
+              <div class="skills-list">
+                <img
+                  src="./assets/zod.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Zod</h3>
+              </div>
+              <div class="skills-list">
+                <img
+                  src="./assets/redux.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Redux</h3>
+              </div>
+              <div class="skills-list">
+                <img
+                  src="./assets/react-router-seeklogo.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>React Router</h3>
+              </div>
+              <div class="skills-list">
+                <img
+                  src="./assets/shadcn-ui-seeklogo.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Shadcn-ui</h3>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Framework</h2>
+            <div class="skill-container">
+              <div class="skills-list">
+                <img
+                  src="./assets/nextjs.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Next.js</h3>
+              </div>
+              <div class="skills-list">
+                <img
+                  src="./assets/tailwind.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Tailwind</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+
+        <!-- Backend -->
+        <h2 class="skills-title">Backend Skills</h2>
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend</h2>
+            <div class="skill-container">
+              <div class="skills-list">
+                <img
+                  src="./assets/prisma-svgrepo-com.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Prisma</h3>
+              </div>
+              <div class="skills-list">
+                <img
+                  src="./assets/supabase-icon.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Supabase</h3>
+              </div>
+              <div class="skills-list">
+                <img
+                  src="./assets/mongodb-icon.svg"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Mongodb</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--  -->
+        <h2 class="skills-title" id="toeic">English Skill</h2>
+        <div class="about-containers">
+          <div class="details-container">
+            <div class="skill-container">
+              <div class="skills-list">
+                <h3>
+                  Toeic: 875
+                  <span class="toeic-score"
+                    >(Listening: 450, Reading: 425)</span
+                  >
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <!-- <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <div class="skills-list">
+                <img
+                  src="./assets/javascript.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Javascript</h3>
+              </div>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div> -->
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title title--project">Projects</h1>
+      <div class="experience-details-container">
+        <!--  -->
+        <div class="about-containers">
+          <div class="details-container color-container project">
+            <div class="article-container">
+              <img
+                src="./assets/airbnb-screenshot-04.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <div class="project-icons">
+              <img src="./assets/nextjs.png" class="icon" />
+              <img src="./assets/typescript.png" class="icon" />
+              <img src="./assets/prisma-svgrepo-com.svg" class="icon" />
+              <img src="./assets/mongodb-icon.svg" class="icon" />
+              <img src="./assets/tailwind.png" class="icon" />
+              <img src="./assets/zod.svg" class="icon" />
+              <img src="./assets/shadcn-ui-seeklogo.svg" class="icon" />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Airbnb Clone: Full-Stack App with Next.js 14+, Typescript, Clerk
+              Auth, Prisma, Mongodb, Tailwind, Shadcn-ui, Zod,Vercel
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Nakekkasit/air-bnb-clone'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://air-bnb-clone-blue-five.vercel.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <div class="details-container color-container project">
+            <div class="article-container">
+              <img
+                src="./assets/forever-cover-1.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <div class="project-icons">
+              <img src="./assets/reactjs.png" class="icon" />
+              <img src="./assets/tailwind.png" class="icon" />
+              <img src="./assets/react-router-seeklogo.svg" class="icon" />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Forever: E-Commerce Website with React JS, React Router, Context
+              API, Tailwind
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Nakekkasit/forever'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://foreverstore.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/react-quiz-screenshot-01.JPG"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <div class="project-icons">
+              <img src="./assets/reactjs.png" class="icon" />
+              <img src="./assets/css-icon.svg" class="icon" />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              React-Quiz-Game: A Quiz Game with React JS, Context API
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Nakekkasit/react-quize-2'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://the-react-quiz-game.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/pizza-screenshot-06.png"
+                alt="Project 4"
+                class="project-img"
+              />
+            </div>
+            <div class="project-icons">
+              <img src="./assets/reactjs.png" class="icon" />
+              <img src="./assets/tailwind.png" class="icon" />
+              <img src="./assets/react-router-seeklogo.svg" class="icon" />
+              <img src="./assets/redux.png" class="icon" />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Fast-React-Pizza: Pizza Order App with React JS, React Router,
+              Tailwind, Redux
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Nakekkasit/fast-react-pizza'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://fast-react-pizza-7oay.onrender.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!--  -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/songaddict-screenshot-02.png"
+                alt="Project 5"
+                class="project-img"
+              />
+            </div>
+            <div class="project-icons">
+              <img src="./assets/reactjs.png" class="icon" />
+              <img src="./assets/react-router-seeklogo.svg" class="icon" />
+              <img src="./assets/tailwind.png" class="icon" />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Songaddict: Music Streaming App with React JS, React Router,
+              Context API, Tailwind
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Nakekkasit/spotify-clone-react'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://songaddict.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!--  -->
+
+          <!--  -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/natours-scrrenshot-01.png"
+                alt="Project 6"
+                class="project-img"
+              />
+            </div>
+            <div class="project-icons">
+              <img src="./assets/html-icon.svg" class="icon" />
+              <img src="./assets/sass.png" class="icon" />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Natours: A Fully Responsive Tourism Website With HTML, Sass
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Nakekkasit/natour'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://natours-complete.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email (4).png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:nakwondersk@gmail.com">nakwondersk@gmail.com</a>
+          </p>
+        </div>
+        <!-- <div class="contact-info-container">
+          <img
+            src="./assets/phone-call.png"
+            alt="Phone icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="tel:0938839986">093-883-9986</a>
+          </p>
+        </div> -->
+
+        <!-- <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div> -->
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#my-skills">My Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#toeic">Toeic</a></li>
+            <!-- <li><a href="#contact">Contact</a></li> -->
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Ekkasit Prapayon. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
